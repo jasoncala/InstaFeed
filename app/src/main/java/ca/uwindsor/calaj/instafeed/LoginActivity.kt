@@ -39,5 +39,6 @@ class LoginActivity : AppCompatActivity() {
         Log.i(TAG, "goPostsActivity")
         val intent = Intent(this, PostsActivity::class.java)
         startActivity(intent)
+        finish()
     }
 }
