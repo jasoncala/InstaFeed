@@ -8,11 +8,11 @@
 
 This app has the following functionalities:
 
-* [] Login and register screen using Firebase Authentication
-* [] Users will be able to post images along with captions and have them on their profile
-* [] Scrollable feed of realtime updated images
-* [] NoSQL database for user and post data with Firestore
-* [] More?
+* [x] Login and register screen using Firebase Authentication
+* [x] Users will be able to post images along with captions and have them on their profile
+* [x] Scrollable feed of realtime updated images
+* [x] NoSQL database for user and post data with Firestore
+* [x] More?
 
 ## Video Walkthrough
 
