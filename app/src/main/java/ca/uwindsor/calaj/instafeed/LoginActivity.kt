@@ -14,7 +14,13 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        val auth = FirebaseAuth.getInstance()
+        if (auth.currentUser != null){
+            goPostsActivity()
+        }
+
         btnLogin.setOnClickListener {
+            btnLogin.isEnabled = false
             val email = etEmail.text.toString()
             val password = etPassword.text.toString()
             if (email.isBlank() || password.isBlank()){
@@ -22,8 +28,8 @@ class LoginActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
             // Firebase authentication check
-            val auth = FirebaseAuth.getInstance()
             auth.signInWithEmailAndPassword(email, password).addOnCompleteListener{ task ->
+                btnLogin.isEnabled = true
                 if(task.isSuccessful){
                     Toast.makeText(this,"Success!", Toast.LENGTH_SHORT).show()
                     goPostsActivity()
