@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "179465574497",
+    "project_id": "instafeed-2b1c0",
+    "storage_bucket": "instafeed-2b1c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179465574497:android:5983292a2f226c4928f220",
+        "android_client_info": {
+          "package_name": "ca.uwindsor.calaj.instafeed"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179465574497-d8n5ssra3m64pgdnit62t69tn92g1b0t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYy81AGcj5rncOVlXyX_FbZgsd4JSSZlo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179465574497-d8n5ssra3m64pgdnit62t69tn92g1b0t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
